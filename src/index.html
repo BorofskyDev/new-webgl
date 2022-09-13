@@ -22,9 +22,9 @@
 
     <canvas class="webgl"></canvas>
     <section class="landing-container ">
-        <h1 class="landing-container--title  ff-sans uppercase letter-spacing-2">Joel Borofsky</h1>
-        <h2 class="landing-container--subtitle  ff-sans uppercase letter-spacing-3">ui/ux focused</h2>
-        <h2 class="landing-container--subtitle  ff-sans uppercase letter-spacing-3">Creative Developer</h1>
+        <h1 class="landing-container--title  ff-sans-main uppercase letter-spacing-2">Joel Borofsky</h1>
+        <h2 class="landing-container--subtitle  ff-sans-main uppercase letter-spacing-3">ui/ux focused</h2>
+        <h2 class="landing-container--subtitle  ff-sans-main uppercase letter-spacing-3">Creative Developer</h1>
     </section>
     <section class="social-media-container">
         <div class="contact-container" style="margin-top: 5rem">
@@ -126,17 +126,22 @@
                 I’ve learned and building my own stuff.</span>
             </p>
             <p class="about__timeline--content" id="shadedImage">
-                <span class="gradient-text">WILL YOUR COMPANY FILL THIS SECTION?</span> 
+                <span class="gradient-text">WILL YOUR COMPANY FILL THIS SECTION?</span>
             </p>
         </div>
     </section>
-    <section class="skills">
+
+    <!--------------------------------->
+    <!-------- SKILLS SECTION --------->
+    <!--------------------------------->
+
+    <section class="skills" id="skills">
         <div class="skills__personal-header">
             <span class="skills__personal-header--title">Who I Am</span>
         </div>
         <div class="skills__text skills__text--left">
             Sales&nbsp;&nbsp;&nbsp;Creative &nbsp;&nbsp;&nbsp;Fast Learner
-            &nbsp;&nbsp;&nbsp; Compassionate &nbsp;&nbsp;&nbsp;  Curious
+            &nbsp;&nbsp;&nbsp; Compassionate &nbsp;&nbsp;&nbsp; Curious
             &nbsp;&nbsp;&nbsp; Customer Service&nbsp;&nbsp;&nbsp; Leader
             &nbsp;&nbsp;&nbsp; Xenophilic&nbsp;&nbsp;&nbsp;Energetic
             Team Player&nbsp;&nbsp;&nbsp;Listener &nbsp;&nbsp;&nbsp;Presenter
@@ -154,10 +159,131 @@
             Threejs&nbsp;&nbsp;&nbsp; glsl&nbsp;&nbsp;&nbsp;
             SASS&nbsp;&nbsp;&nbsp; GitHub&nbsp;&nbsp;&nbsp; Hostinger&nbsp;&nbsp;&nbsp;
             React Router &nbsp;&nbsp;&nbsp; TailwindCSS &nbsp;&nbsp;&nbsp; React Fonts &nbsp;&nbsp;&nbsp;
-            Stylized Components &nbsp;&nbsp;&nbsp; GSAP &nbsp;&nbsp;&nbsp; Blender &nbsp;&nbsp;&nbsp; Figma 
+            Stylized Components &nbsp;&nbsp;&nbsp; GSAP &nbsp;&nbsp;&nbsp; Blender &nbsp;&nbsp;&nbsp; Figma
             Vercel &nbsp;&nbsp;&nbsp; dat.GUI
         </div>
     </section>
+
+    <!--------------------------------->
+    <!-------- PROJECTS SECTION ------->
+    <!--------------------------------->
+
+    <section class="projects">
+        <h1 class="projects__heading">Projects</h1>
+        <div class="projects__card">
+            <div class="projects__header">
+                <a href="https://solit-mwgmea7dh-joelborofskydev-gmailcom.vercel.app/index.html" target="__blank"><img src="assets/images/projects/solit.jpg" alt="galaxy"
+                        class="projects__header--img"></a>
+            </div>
+            <div class="projects__content">
+                <h3 class="projects__content--title">SOLIT concept build</h3>
+                <a href="https://github.com/BorofskyDev/space-travel-redux" target="__blank"> <h5 class="projects__content--subtitle">Repository</h5></a>
+                <p class="projects__content--description">
+                    <span>A build based on Kevin Powell's Space Travel challenge.</span>
+                    <span>The goal was more to learn how to build up a design system, build a website using 
+                        a mobile first approach, and create a site that's more accessible. I changed the color 
+                        scheme as well as some pages, as well as created a sci-fi background just for fun.
+                    </span>
+                </p>
+                <div class="projects__container">
+                    <p class="projects__container--link">HTML5</p>
+                    <p class="projects__container--link">CSS</p>
+                    <p class="projects__container--link">JavaScript</p>
+                </div>
+            </div>
+        </div>
+        <div class="projects__card">
+            <div class="projects__header">
+                <a href="https://galaxy-generaor.vercel.app/" target="__blank"><img src="assets/images/projects/3dgalaxy.jpg" alt="galaxy"
+                        class="projects__header--img"></a>
+            </div>
+            <div class="projects__content">
+                <h3 class="projects__content--title">WebGL Galaxy Generator</h3>
+                <a href="https://github.com/BorofskyDev/galaxy-generator.git" target="__blank"> <h5 class="projects__content--subtitle">Repository</h5></a>
+                <p class="projects__content--description">
+                    <span>A build from Bruno Simon's "Threejs-Journey."</span>
+                    <span>The build explores the use of user camera and particles.</span>
+                </p>
+                <div class="projects__container">
+                    <p class="projects__container--link">Threejs</p>
+                </div>
+            </div>
+        </div>
+        <div class="projects__card">
+            <div class="projects__header">
+                <a href="https://haunted-house-two-alpha.vercel.app/" target="__blank"><img src="assets/images/projects/3dhauntedHouse.jpg" alt="haunted house"
+                        class="projects__header--img"></a>
+            </div>
+            <div class="projects__content">
+                <h3 class="projects__content--title">WebGL Haunted House</h3>
+                <a href="https://github.com/BorofskyDev/haunted-house.git" target="__blank"> <h5 class="projects__content--subtitle">Repository</h5></a>
+                <p class="projects__content--description">
+                    <span>A build from Bruno Simon's "Threejs-Journey."</span>
+                    <span>The build explores the use lighting, shading, and textures.</span>
+                </p>
+                <div class="projects__container">
+                    <p class="projects__container--link">Threejs</p>
+                </div>
+            </div>
+        </div>
+        <div class="projects__card">
+            <div class="projects__header">
+                <a href="https://go-live-seven-rho.vercel.app/" target="__blank"><img src="assets/images/projects/l3dtextproject.jpg" alt=""
+                        class="projects__header--img"></a>
+            </div>
+            <div class="projects__content">
+                <h3 class="projects__content--title">WebGL Text</h3>
+                <a href="https://github.com/BorofskyDev/threeJSJourney/tree/main/13_3d_text" target="__blank"> <h5 class="projects__content--subtitle">Repository</h5></a>
+                <p class="projects__content--description">
+                    <span>A build from Bruno Simon's "Threejs-Journey."</span>
+                    <span>The build explores the creation of 3d Lettering</span>
+                    <span>as well as placing elements within objects to save rendering.</span>
+                </p>
+                <div class="projects__container">
+                    <p class="projects__container--link">Threejs</p>
+                </div>
+            </div>
+        </div>
+        <div class="projects__card">
+            <div class="projects__header">
+                <a href="https://www.wesellsafe.com/" target="__blank"><img src="assets/images/projects/lsellsafe.jpg" alt=""
+                        class="projects__header--img"></a>
+            </div>
+            <div class="projects__content">
+                <h3 class="projects__content--title">SellSafe</h3>
+                <a href="https://github.com/BorofskyDev/sellsafe" target="__blank"> <h5 class="projects__content--subtitle">Repository</h5></a>
+                <p class="projects__content--description">
+                    <span>A build based on a tutorial. My second non-profile website built.</span>
+                    <span>Explored use of gradient text. Built as concept for my now defunct company.</span>
+                </p>
+                <div class="projects__container">
+                    <p class="projects__container--link">React</p>
+                    <p class="projects__container--link">React Dom</p>
+                    <p class="projects__container--link">React Icons</p>
+                </div>
+            </div>
+        </div>
+        <div class="projects__card">
+            <div class="projects__header">
+                <a href="https://corestrat.net/" target="__blank"><img src="assets/images/projects/lcorestrat.jpg" alt=""
+                        class="projects__header--img"></a>
+            </div>
+            <div class="projects__content">
+                <h3 class="projects__content--title">core strategies</h3>
+                <a href="https://github.com/BorofskyDev/core" target="__blank"> <h5 class="projects__content--subtitle">Repository</h5></a>
+                <p class="projects__content--description">
+                    <span>My first non-profile build. Built the first week out of coding bootcamp.</span>
+                    <span>Used gradient text, learned responsive design, and explored the use of color palettes.</span>
+                </p>
+                <div class="projects__container">
+                    <p class="projects__container--link">React</p>
+                    <p class="projects__container--link">React Dom</p>
+                    <p class="projects__container--link">React Icons</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="assets/js/config.js"></script>
     <script src="assets/js/threeBg.js"></script>
 </body>
