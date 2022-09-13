@@ -4,7 +4,7 @@
   position: relative;
   background: $dark-gray;
   color: $white;
-  top: -40%;
+  top: 30%;
   padding: 1rem;
   overflow: hidden;
   padding-top: 5rem;
@@ -16,14 +16,14 @@
       .joel {
         border-radius: 10px;
       position: relative;
-      background: $accent-dark;
-      box-shadow: 0 8px 32px $accent-bright, 2px 20px 72px $accent-bright
+      background: $dark;
+      box-shadow: 0 12px 15px $accent-bright, 0 20px 72px $accent-dark;
       &__curve {
         position: absolute;
-        // top: 30px;
+        top: 30px;
         top: -10px;
         left: 20px;
-        width: 30%;
+        width: 33%;
         height: 120%;
         border-left: 2px solid $accent-bright;
         border-radius: 50%;
@@ -35,15 +35,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 15px;
+        gap: 1rem;
         font-size: 0.8rem;
         // font-size: 1rem;
         padding: 1rem;
 
       }
       &__img {
-        width: 100px;
-        height: 100px;
+        width: 80%;
+        height: 100%;
         border-radius: 50%;
         border-right: 2px solid $accent-dark;
         @media (min-width: 400px) {
@@ -65,7 +65,7 @@
         & img {
           width: 20px;
           height: 20px;
-          color: $accent-bright;
+          color: $white;
         }
       }
     }
