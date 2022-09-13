@@ -293,29 +293,17 @@ ul {
 /* GRADIENT TEXT */
 .gradient-text {
   background-image: linear-gradient(45deg,
-      $dark,
+      $accent-bright,
       $white,
-      $dark-gray,
+      $accent-dark,
       $light-gray);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   background-size: 300%;
   background-position: -100%;
-  animation: animatedText 6s alternate-reverse;
-}
-
-.gradient-text:hover,
-.gradient-text:focus {
-  background-image: linear-gradient(-45deg,
-      $accent-bright,
-      $dark-gray,
-      $white,
-      $accent-dark);
-  animation: animatedText 3s infinite alternate-reverse;
-}
-
-@keyframes animatedText {
+  animation: animatedText 7s infinite alternate-reverse;
+  @keyframes animatedText {
   from {
     background-position: 0%;
   }
@@ -324,6 +312,8 @@ ul {
     background-position: 100%;
   }
 }
+}
+
 
 /* LARGE BUTTON */
 .large-button {
