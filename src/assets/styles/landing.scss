@@ -1,0 +1,184 @@
+@import './base.scss';
+
+/************************/
+/** LANDING COMPONENTS **/
+/************************/
+
+/* CANVAS */
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  mix-blend-mode: exclusion;
+}
+
+
+
+/* LANDING PAGE */
+
+
+
+.landing-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.landing-container--title {
+  font-size: 2rem;
+  line-height: 6rem;
+}
+
+.landing-container--subtitle {
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+.social-media-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5rem;
+  gap: 1.5rem;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
+#github,
+#twitter,
+#linkedin,
+#email {
+  font-size: 3rem;
+  background-color: #18191f;
+  color: $white;
+  box-shadow: 2px 2px 2px #D2042D, 2px 1px 12px #D2042D,
+    2px 2px 10px #D2042D, 2px 2px 3px #D2042D, inset 2px 2px 10px #D2042D,
+    inset 2px 2px 10px #D2042D, inset 2px 2px 10px #D2042D,
+    inset 2px 2px 10px #D2042D;
+  border-radius: 25%;
+  padding: 11px 19px;
+  margin: 0 40px;
+  animation: social 3s linear infinite;
+  text-shadow: 0 0 50px $accent-bright, 0 0 100px $accent-bright, 0 0 150px $accent-bright,
+    0 0 200px $accent-bright;
+}
+
+#github:hover,
+#github:focus,
+#email:hover,
+#email:focus,
+#twitter:hover,
+#twitter:focus,
+#linkedin:hover,
+#linkedin:focus {
+  transform: scale(1.2)
+}
+
+#twitter:active,
+#email:active,
+#github:active,
+#linkedin:active {
+  transform: scale(0.8)
+}
+
+#twitter {
+  animation-delay: 0.3s;
+}
+
+#linkedin {
+  animation-delay: 0.7s;
+}
+
+#github {
+  animation-delay: 0.1s;
+}
+
+#email {
+  animation-delay: 0.5s;
+}
+
+@media (min-width: 35rem) {
+  .social-media-container {
+    margin-top: 2rem;
+  }
+
+  .landing-container--title {
+    font-size: 4rem;
+  }
+
+  .landing-container--subtitle {
+    font-size: 2rem;
+  }
+
+  #github,
+  #twitter,
+  #linkedin,
+  #email {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 55rem) {
+  .landing-container--title {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+
+  .landing-container--subtitle {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+
+  .social-media-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-inline: 1rem;
+    margin-top: 5rem;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+  }
+
+  .social-media {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 5rem;
+    flex-wrap: wrap;
+  }
+
+  #github,
+  #twitter,
+  #linkedin,
+  #email {
+    font-size: 8rem;
+  }
+
+  .large-button {
+    margin-bottom: 3rem;
+  }
+}

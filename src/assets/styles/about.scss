@@ -1,73 +1,73 @@
-// .about {
-//   position: relative;
-//   background: var(--dark-gray);
-//   color: var(--white);
-//   top: -40%;
-//   padding: 1rem;
-//   overflow: hidden;
-//   padding-top: 5rem;
-//   &__header {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       gap: 1rem;
-//       .joel {
-//         border-radius: 10px;
-//       position: relative;
-//       background: $darker-primary;
-//       box-shadow: 0 8px 32px $box-shadow-yellow, 2px 20px 72px $box-shadow-blue;
-//       &__curve {
-//         position: absolute;
-//         // top: 30px;
-//         top: -10px;
-//         left: 20px;
-//         width: 30%;
-//         height: 120%;
-//         border-left: 2px solid $primary;
-//         border-radius: 50%;
-//         transform: rotate(-20deg);
-//         box-shadow: 0 8px 32px 0 $box-shadow-yellow;
-//         @media (min-width: 35em) {
-//             width: 35%;
-//         }
-//       }
-//       &__infos {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         gap: 15px;
-//         font-size: $fs-200;
-//         // font-size: 1rem;
-//         padding: 1rem;
+@import './base.scss';
 
-//       }
-//       &__img {
-//         width: 100px;
-//         height: 100px;
-//         border-radius: 50%;
-//         border-right: 2px solid $secondary;
-//         @media (min-width: 400px) {
-//           & {
-//             width: 150px;
-//             height: 150px;
-//           }
-//         }
-//       }
-//       &__col {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 5px;
-//       }
-//       &__info {
-//         display: flex;
-//         align-items: center;
-//         gap: 10px;
-//         & img {
-//           width: 20px;
-//           height: 20px;
-//           color: $primary;
-//         }
-//       }
-//     }
-//   }
-// }
+.about {
+  position: relative;
+  background: $dark-gray;
+  color: $white;
+  top: -40%;
+  padding: 1rem;
+  overflow: hidden;
+  padding-top: 5rem;
+  &__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      .joel {
+        border-radius: 10px;
+      position: relative;
+      background: $accent-dark;
+      box-shadow: 0 8px 32px $accent-bright, 2px 20px 72px $accent-bright
+      &__curve {
+        position: absolute;
+        // top: 30px;
+        top: -10px;
+        left: 20px;
+        width: 30%;
+        height: 120%;
+        border-left: 2px solid $accent-bright;
+        border-radius: 50%;
+        transform: rotate(-20deg);
+        box-shadow: 0 8px 32px 0 $light-gray;
+
+    }
+      &__infos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        font-size: 0.8rem;
+        // font-size: 1rem;
+        padding: 1rem;
+
+      }
+      &__img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-right: 2px solid $accent-dark;
+        @media (min-width: 400px) {
+          & {
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+      &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      &__info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        & img {
+          width: 20px;
+          height: 20px;
+          color: $accent-bright;
+        }
+      }
+    }
+  }
+}
