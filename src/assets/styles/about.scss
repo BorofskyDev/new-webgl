@@ -59,13 +59,13 @@
       }
       &__img {
         width: 100px;
-        height: 100px;
+        height: 130px;
         border-radius: 50%;
         border-right: 2px solid $light-gray;
-        @media (min-width: 400px) {
+        @media (min-width: 35em) {
           & {
             width: 150px;
-            height: 150px;
+            height: 180px;
           }
         }
       }
