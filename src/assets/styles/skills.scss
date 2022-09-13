@@ -1,0 +1,155 @@
+@import './base.scss';
+
+.skills {
+  position: relative;
+  height: 250px;
+  font-size: 1.5rem;
+  background: $dark-gray;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 3rem;
+
+  @media (min-width: 35em) {
+    margin-top: 7rem;
+    height: 350px
+}
+
+@media (min-width: 55em) {
+    margin-top: 15rem;
+    height: 450px;
+}
+
+&__personal-header {
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    &--title {
+        color: $white;
+        
+        @media (min-width: 35em) {
+        font-size: 3rem;
+        line-height: 1;
+      }
+
+      @media (min-width: 55em) {
+        font-size: 4rem;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  &__tech-header {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 2.3rem;
+    
+    @media (min-width: 35em) {
+        padding-top: 3rem;
+    }
+    &--title {
+      color: $accent-bright;
+
+      @media (min-width: 35em) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__text {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.857rem;
+    @media (min-width: 35rem) {
+        font-size: 1.25rem;
+        line-height: 2.5;
+    }
+
+    @media (min-width: 55em) {
+        font-size: 2rem;
+        line-height: 4.5;
+    }
+    &--left {
+      left: 0;
+      top: 3rem;
+      //   top: 6rem;
+      color: $white;
+      animation: moveLeft 30s linear infinite;
+
+      @keyframes moveLeft {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+
+        100% {
+          transform: translate3d(-50%, 0, 0);
+        }
+      }
+    }
+
+    &--right {
+      right: 0;
+      top: 7.3rem;
+      //   top: 11rem;
+      color: $accent-bright;
+      animation: moveRight 30s linear infinite;
+
+      @media (min-width: 35em) {
+        top: 9rem;
+        line-height: 4;
+      }
+
+      @media (min-width: 55em) {
+        top: 11rem;
+        line-height: 5;
+      }
+
+      @keyframes moveRight {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+
+        100% {
+          transform: translate3d(50%, 0, 0);
+        }
+      }
+    }
+  }
+
+//   @media (min-width: 35em) {
+//     & {
+//       height: 300px;
+//     }
+//     &__header {
+//       font-size: 2rem;
+//     }
+//     &__text {
+//       font-size: 1.5rem;
+
+//       &--left {
+//         top: 5rem;
+//         font-weight: 600;
+//       }
+//       &--right {
+//         top: 8rem;
+//       }
+//     }
+//   }
+//   @media (min-width: 45em) {
+//     & {
+//       height: 350px;
+//       font-size: 2rem;
+//     }
+//     &__header {
+//       font-size: 1rem;
+//     }
+//     &__text {
+//       font-size: 1rem;
+//       &--left {
+//         top: 6rem;
+//       }
+//       &--right {
+//         top: 10rem;
+//       }
+//     }
+//   }
+}
