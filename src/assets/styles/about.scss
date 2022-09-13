@@ -30,9 +30,9 @@
       position: relative;
       background: $dark-gray;
       //   box-shadow: 0 8px 32px $box-shadow-yellow, 2px 20px 72px $box-shadow-blue;
-    //   box-shadow: -1px 28px 10px -18px $accent-dark inset;
-    //   -webkit-box-shadow: -1px 28px 10px -18px $accent-dark inset;
-    //   -moz-box-shadow: -1px 28px 10px -18px $accent-dark inset;
+      //   box-shadow: -1px 28px 10px -18px $accent-dark inset;
+      //   -webkit-box-shadow: -1px 28px 10px -18px $accent-dark inset;
+      //   -moz-box-shadow: -1px 28px 10px -18px $accent-dark inset;
       &__curve {
         position: absolute;
         // top: 30px;
@@ -46,7 +46,7 @@
         box-shadow: 0 8px 32px 0 $accent-dark;
 
         @media (max-width: 19em) {
-            display: none;
+          display: none;
         }
 
         @media (min-width: 35em) {
@@ -162,6 +162,75 @@
     p:last-child {
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    &--button {
+      position: relative;
+      border: none;
+      cursor: pointer;
+      width: 175px;
+      height: 120px;
+      background: none;
+      color: $white;
+
+      &:before,
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:before {
+        content: '';
+        background: $white;
+        clip-path: path(
+          'M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z'
+        );
+        transition: clip-path 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
+      }
+
+      &:hover:before {
+        background: $accent-bright;
+        clip-path: path(
+          'M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z'
+        );
+      }
+
+      & span {
+        mix-blend-mode: difference;
+        font-weight: 500;
+      }
+
+      &:after {
+        content: '';
+        height: 85%;
+        width: 95%;
+        top: 6px;
+        border: 1px solid $accent-bright;
+        border-radius: 58% 42% 55% 45% / 56% 45% 55% 44%;
+        transform: rotate(-20deg);
+        transition: transform 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
+      }
+
+      &:hover:after {
+        transform: translate3d(0, -5px, 0);
+        border: 1px solid $white;
+      }
+
+      @media (max-width: 800px) {
+        & {
+          transform: scale3d(0.7, 0.7, 0.7);
+          font-size: 23px;
+        }
+      }
     }
   }
 }
