@@ -42,7 +42,7 @@
 
   &__header {
     height: 200px;
-    
+
     &--img {
       object-fit: cover;
       height: 100%;
@@ -50,13 +50,13 @@
       border-radius: 25px;
       &:hover,
       &:focus {
-       box-shadow: 1px 50px 48px -26px rgba(210,4,45,0.78);
--webkit-box-shadow: 1px 50px 48px -26px rgba(210,4,45,0.78);
--moz-box-shadow: 1px 50px 48px -26px rgba(210,4,45,0.78);
+        box-shadow: 1px 12px 48px -26px $accent-bright;
+        -webkit-box-shadow: 1px 12px 48px -26px $accent-bright;
+        -moz-box-shadow: 1px 12px 48px -26px $accent-bright;
       }
     }
   }
-  
+
   &__content {
     display: flex;
     flex-direction: column;

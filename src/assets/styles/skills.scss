@@ -11,22 +11,22 @@
 
   @media (min-width: 35em) {
     margin-top: 7rem;
-    height: 350px
-}
+    height: 350px;
+  }
 
-@media (min-width: 55em) {
+  @media (min-width: 55em) {
     margin-top: 15rem;
     height: 450px;
-}
+  }
 
-&__personal-header {
+  &__personal-header {
     font-weight: 600;
     text-transform: uppercase;
-    
+
     &--title {
-        color: $white;
-        
-        @media (min-width: 35em) {
+      color: $white;
+
+      @media (min-width: 35em) {
         font-size: 3rem;
         line-height: 1;
       }
@@ -42,9 +42,9 @@
     font-weight: 600;
     text-transform: uppercase;
     padding-top: 2.3rem;
-    
+
     @media (min-width: 35em) {
-        padding-top: 3rem;
+      padding-top: 3rem;
     }
     &--title {
       color: $accent-bright;
@@ -60,13 +60,13 @@
     white-space: nowrap;
     font-size: 0.857rem;
     @media (min-width: 35rem) {
-        font-size: 1.25rem;
-        line-height: 2.5;
+      font-size: 1.25rem;
+      line-height: 2.5;
     }
 
     @media (min-width: 55em) {
-        font-size: 2rem;
-        line-height: 4.5;
+      font-size: 2rem;
+      line-height: 4.5;
     }
     &--left {
       left: 0;
@@ -115,41 +115,41 @@
     }
   }
 
-//   @media (min-width: 35em) {
-//     & {
-//       height: 300px;
-//     }
-//     &__header {
-//       font-size: 2rem;
-//     }
-//     &__text {
-//       font-size: 1.5rem;
+  //   @media (min-width: 35em) {
+  //     & {
+  //       height: 300px;
+  //     }
+  //     &__header {
+  //       font-size: 2rem;
+  //     }
+  //     &__text {
+  //       font-size: 1.5rem;
 
-//       &--left {
-//         top: 5rem;
-//         font-weight: 600;
-//       }
-//       &--right {
-//         top: 8rem;
-//       }
-//     }
-//   }
-//   @media (min-width: 45em) {
-//     & {
-//       height: 350px;
-//       font-size: 2rem;
-//     }
-//     &__header {
-//       font-size: 1rem;
-//     }
-//     &__text {
-//       font-size: 1rem;
-//       &--left {
-//         top: 6rem;
-//       }
-//       &--right {
-//         top: 10rem;
-//       }
-//     }
-//   }
+  //       &--left {
+  //         top: 5rem;
+  //         font-weight: 600;
+  //       }
+  //       &--right {
+  //         top: 8rem;
+  //       }
+  //     }
+  //   }
+  //   @media (min-width: 45em) {
+  //     & {
+  //       height: 350px;
+  //       font-size: 2rem;
+  //     }
+  //     &__header {
+  //       font-size: 1rem;
+  //     }
+  //     &__text {
+  //       font-size: 1rem;
+  //       &--left {
+  //         top: 6rem;
+  //       }
+  //       &--right {
+  //         top: 10rem;
+  //       }
+  //     }
+  //   }
 }

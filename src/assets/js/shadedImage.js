@@ -1,17 +1,17 @@
-import * as THREE from 'three'
-import images from './images'
-import vertex from '../shaders/vertex.glsl'
-import fragment from '../shaders/fragment.glsl'
+import * as THREE from 'three';
+import images from './images';
+import vertex from '../shaders/vertex.glsl';
+import fragment from '../shaders/fragment.glsl';
 
 // BRING IN IMAGES
-const loader = new THREE.TextureLoader()
+const loader = new THREE.TextureLoader();
 
-const texture1 = loader.load(images.cardTexture1)
-const texture2 = loader.load(images.cardTexture2)
-const texture3 = loader.load(images.cardTexture3)
-const texture4 = loader.load(images.cardTexture4)
-const texture5 = loader.load(images.cardTexture5)
-const texture6 = loader.load(images.cardTexture6)
+const texture1 = loader.load(images.cardTexture1);
+const texture2 = loader.load(images.cardTexture2);
+const texture3 = loader.load(images.cardTexture3);
+const texture4 = loader.load(images.cardTexture4);
+const texture5 = loader.load(images.cardTexture5);
+const texture6 = loader.load(images.cardTexture6);
 
 // CREATE EASE-IN ANIMATION
 function lerp(start, end, t) {
@@ -184,4 +184,4 @@ class Shaded {
   }
 }
 
-new Shaded()
+new Shaded();

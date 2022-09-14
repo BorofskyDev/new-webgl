@@ -1,9 +1,7 @@
-
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import * as dat from 'dat.gui';
-import images from '../js/images'
-
+import images from '../js/images';
 
 // LOADER
 const textureLoader = new THREE.TextureLoader();

@@ -32,10 +32,10 @@
   }
 
   .form {
-       @media (min-width: 50rem) {
-        width: 90%;
-      }
-    
+    @media (min-width: 50rem) {
+      width: 90%;
+    }
+
     &__flex {
       display: flex;
       justify-content: center;
@@ -165,11 +165,11 @@
 
     @media (min-width: 35em) {
       flex-direction: row;
-    } 
-    
+    }
+
     @media (min-width: 50rem) {
-        width: 90%;
-        gap: 6rem;
+      width: 90%;
+      gap: 6rem;
     }
     &--item {
       position: relative;
