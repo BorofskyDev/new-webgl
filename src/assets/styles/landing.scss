@@ -8,6 +8,7 @@
 .webgl {
   position: absolute;
   top: 0;
+  margin-top: 3rem;
   left: 0;
   outline: none;
   mix-blend-mode: exclusion;
@@ -186,4 +187,9 @@
   .large-button {
     margin-bottom: 3rem;
   }
+}
+
+.test {
+  background-color: green;
+  margin-bottom: 4rem;
 }
