@@ -25,8 +25,8 @@ const sphereGeometry = new THREE.SphereGeometry(1, 64, 64);
 // Materials
 
 const material = new THREE.MeshStandardMaterial();
-material.metalness = 0.7;
-material.roughness = 0.2;
+material.metalness = 0.3;
+material.roughness = 0.1;
 material.normalMap = normalTexture;
 
 material.color = new THREE.Color(0x292929);
@@ -48,7 +48,7 @@ scene.add(sphere);
 // const light1 = gui.addFolder('Light 1')
 
 const pointLight1 = new THREE.PointLight(0xfefeff, 2);
-pointLight1.position.set(0, 5.53, -2.05);
+pointLight1.position.set(0, 5.53, -3.5);
 pointLight1.intensity = 10;
 
 scene.add(pointLight1);
@@ -66,7 +66,7 @@ scene.add(pointLight1);
 
 // const light2 = gui.addFolder('Light 2');
 const pointLight2 = new THREE.PointLight(0xd2042d, 2);
-pointLight2.position.set(0, -5.28, -3);
+pointLight2.position.set(0, -5.28, -3.5);
 pointLight2.intensity = 10;
 
 scene.add(pointLight2);
