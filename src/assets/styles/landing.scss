@@ -65,6 +65,7 @@
 #github,
 #twitter,
 #linkedin,
+#codepen,
 #email {
   font-size: 3rem;
   background-color: #18191f;
@@ -83,6 +84,8 @@
 
 #github:hover,
 #github:focus,
+#codepen:hover,
+#codepen:focus,
 #email:hover,
 #email:focus,
 #twitter:hover,
@@ -96,6 +99,7 @@
 #twitter:active,
 #email:active,
 #github:active,
+#codepen:active,
 #linkedin:active {
   transform: scale(0.8)
 }
