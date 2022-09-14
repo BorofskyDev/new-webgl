@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <a href="#" class="skip-to-content">Skip to Content</a>
+    <a href="#about" class="skip-to-content">Skip to Content</a>
 
     <!--------------------------------->
     <!-------- LANDING SECTION -------->
@@ -26,14 +26,14 @@
         <h2 class="landing-container--subtitle  ff-sans-main uppercase letter-spacing-3">ui/ux focused</h2>
         <h2 class="landing-container--subtitle  ff-sans-main uppercase letter-spacing-3">Creative Developer</h1>
     </section>
-    <section class="social-media-container">
+    <section class="social-media-container" id="home">
         <div class="contact-container" style="margin-top: 5rem">
             <!-- explore button -->
             <!-- <a href="#" class="large-button uppercase ff-sans-alt text-dark bg-white fs-600"
             style="margin-top: 5rem">contact</a> -->
             <!-- not all icons will work. Old 4.0 versions tend to do better - a blank "fa" is usually what's needed -->
             <div class="social-media">
-                <a href="#" target="_blank"><i class="fa fa-envelope-square" id="email"></i></a>
+                <a href="#contact"><i class="fa fa-envelope-square" id="email"></i></a>
                 <a href="https://twitter.com/DevBorofsky" target="_blank"><i class="fa fa-twitter-square"
                         id="twitter"></i></a>
                 <a href="https://github.com/BorofskyDev" target="_blank"><i class="fa fa-github-square"
@@ -320,8 +320,8 @@
                 </div>
                 <div class="question__answer">
                     <p>
-                        It's a simple portfolio site that's meant to show off design. There's not a lot 
-                        here to get through and it's easy to scroll. 
+                        It's a simple portfolio site that's meant to show off design. There's not a lot
+                        here to get through and it's easy to scroll.
                     </p>
                 </div>
             </div>
@@ -332,8 +332,8 @@
                 </div>
                 <div class="question__answer">
                     <p>
-                        My knowledge and experience are limited, but I can build out basic portfolio sites 
-                        like this one. 
+                        My knowledge and experience are limited, but I can build out basic portfolio sites
+                        like this one.
                     </p>
                 </div>
             </div>
@@ -348,7 +348,7 @@
                         It just depends on what you're looking for. Adding 3D elements (like my header)
                         will always add to the cost because of the coding involved. If you want a regular 2D
                         site that will still look stylish (don't sleep on the CSS!) and provide all the assets
-                        (pictures, logo, etc) then the cost will be a few hundred dollars. The more work I have to 
+                        (pictures, logo, etc) then the cost will be a few hundred dollars. The more work I have to
                         do to build a site, the more you can expect to pay.
                     </p>
                 </div>
@@ -361,16 +361,17 @@
                 </div>
                 <div class="question__answer">
                     <p>
-                        At this time my skillset isn't where I feel comfortable doing this as a freelance project. 
-                        I'd be more than willing to team up with an experienced developer and handle the design and front-facing 
-                        aspects of the site.  
+                        At this time my skillset isn't where I feel comfortable doing this as a freelance project.
+                        I'd be more than willing to team up with an experienced developer and handle the design and
+                        front-facing
+                        aspects of the site.
                     </p>
                 </div>
             </div>
             <div class="question">
                 <div class="question__wrap">
                     <div class="question__status"></div>
-                    <h3 tabindex="0">"Hi, I'm with [_______] company/org/group/etc, we like your design! Can you build 
+                    <h3 tabindex="0">"Hi, I'm with [_______] company/org/group/etc, we like your design! Can you build
                         us a website for free? We'll give you exposure!"
                     </h3>
                 </div>
@@ -388,9 +389,10 @@
                 </div>
                 <div class="question__answer">
                     <p>
-                        I originally attended a coding bootcamp to get into data science. I learned Python, Flask, and Pandas but 
-                        haven't worked with them since my bootcamp. Being able to design sites ignited something in me 
-                        that only grows stronger every day. 
+                        I originally attended a coding bootcamp to get into data science. I learned Python, Flask, and
+                        Pandas but
+                        haven't worked with them since my bootcamp. Being able to design sites ignited something in me
+                        that only grows stronger every day.
                     </p>
                 </div>
             </div>
@@ -402,9 +404,9 @@
                 </div>
                 <div class="question__answer">
                     <p>
-                        I've touched Python and Typscript. I also learned PostgreSQL and ElephantSQL. 
-                        In my spare time I picked up Excel (not really a coding, but it counts for 
-                        back end work). 
+                        I've touched Python and Typscript. I also learned PostgreSQL and ElephantSQL.
+                        In my spare time I picked up Excel (not really a coding, but it counts for
+                        back end work).
                     </p>
                 </div>
             </div>
@@ -416,13 +418,122 @@
                 </div>
                 <div class="question__answer">
                     <p>
-                        When I have the time and money I love to travel. I'll do the tourist thing for a day or two, 
-                        but I prefer to spend time among the locals. My favorite place so far has been Zihuatanejo, MX, though 
-                        Krakow, Poland comes close. I also play games, but mostly strategy cames and, of course, Cities: Skylines. 
-                        Just something about design that attracts me to the game. 
+                        When I have the time and money I love to travel. I'll do the tourist thing for a day or two,
+                        but I prefer to spend time among the locals. My favorite place so far has been Zihuatanejo, MX,
+                        though
+                        Krakow, Poland comes close. I also play games, but mostly strategy cames and, of course, Cities:
+                        Skylines.
+                        Just something about design that attracts me to the game.
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!--------------------------------->
+    <!-------- PROJECTS SECTION ------->
+    <!--------------------------------->
+
+    <section class="contact" id="contact">
+        <div class="contact__wrapper">
+            <div class="contact__header">Contact Me</div>
+        </div>
+        <div class="form">
+            <form action="https://formsubmit.co/joelborofskydev@gmail.com" method="post" class="form">
+                <div class="form__flex">
+                    <div class="form__info">
+                        <label>Hello, my name is</label>
+                        <input type="text" placeholder="Enter Name" name="full name" min="1" max="30" required />
+                    </div>
+                </div>
+                <div class="form__flex">
+                    <div class="form__info">
+                        <label>I'm looking for</label>
+                        <input type="text" placeholder="Enter Type of Service" name="service" min="3" max="40"
+                            required />
+                    </div>
+                </div>
+                <div class="form__flex">
+                    <div class="form__info">
+                        <label>Get in touch with me at</label>
+                        <input type="text" placeholder="Enter Email Address" name="email address" required />
+                    </div>
+                </div>
+                <div class="form__flex">
+                    <textarea placeholder="Your Message" required name="message"></textarea>
+                </div>
+                <div class="form__flex">
+                    <div class="form__container">
+                        <button class="form__container--btn">
+                            <span>Send <i class="uil uil-message"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="contact__profile">
+            <div class="contact__profile--item">
+                <img src="assets/images/me.jpg" alt="Joel Borofsky">
+                <div class="contact__profile--col">
+                    <b>Joel Borofsky</b>
+                    <span>Creative Developer</span>
+                </div>
+            </div>
+            <div class="contact__profile--item">
+                <div class="contact__profile--col">
+                    <span>Kansas</span>
+                    <span>USA</span>
+                </div>
+            </div>
+            <div class="contact__profile--item">
+                <div class="contact__profile--col">
+                    <span>UI/UX</span>
+                    <span>Frontend Developer</span>
+                </div>
+            </div>
+            <div class="contact__profile--item">
+                <div class="contact__profile--col">
+                    <span>Contact form not working?</span>
+                    <b>joelborofskydev@gmail.com</b>
+                </div>
+            </div>
+        </div>
+        <div class="contact__socials">
+            <div class="contact__socials">
+                <a href="https://twitter.com/DevBorofsky" target="_blank" title="Twitter" class="coolFunnyLink">
+                    <span>Twitter</span>
+                    <svg width="100%" height="9" viewBox="0 0 101 9">
+                        <path
+                            d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                            pathLength="1" fill="none" stroke="#d2042d" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/joelborofsky/" target="_blank" title="LinkedIn"
+                    class="coolFunnyLink">
+                    <span>LinkedIn</span>
+                    <svg width="100%" height="9" viewBox="0 0 101 9">
+                        <path
+                            d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                            pathLength="1" fill="none" stroke="#d2042d" />
+                    </svg>
+                </a>
+                <a href="hhttps://github.com/BorofskyDev" target="_blank" title="GitHub" class="coolFunnyLink">
+                    <span>GitHub</span>
+                    <svg width="100%" height="9" viewBox="0 0 101 9">
+                        <path
+                            d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                            pathLength="1" fill="none" stroke="#d2042d" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="contact__footer">
+            <div class="contact__footer-link">A borofskyDev Experience</div>
+            <div class="contact__footer-link">Copyright©2022</div>
+            <div class="contact__footer-link">May the force be with you</div>
+            <a href="https://www.flaticon.com/free-icons/astronaut-helmet" title="astronaut helmet icons"
+                target="_blank" style="font-size: 10px;">Astronaut helmet icons
+                created by Graphix's Art - Flaticon</a>
         </div>
     </section>
 
